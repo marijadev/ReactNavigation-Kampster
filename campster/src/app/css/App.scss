@@ -1,0 +1,30 @@
+@import 'fonts.css';
+
+* {
+    text-decoration: none;
+    font-family: MyriadPro-light;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+}
+
+.headline {
+    display: inline-block;
+    font-family: 'MyriadPro-Bold';
+    font-size: 30px;
+}
+
+.subheadline {
+    display: inline-block;
+    font-size: 22px;
+
+    &:before {
+        content: '/';
+        color: currentColor;
+        margin:0 12px;
+    }
+}

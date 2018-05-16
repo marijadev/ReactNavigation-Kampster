@@ -1,0 +1,126 @@
+ul {
+  margin: 0;
+  padding: 0; }
+
+header {
+  padding: 0 15px; }
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05); }
+  @media screen and (max-width: 600px) {
+    .header-inner {
+      position: relative;
+      margin-bottom: 56px; } }
+  .header-inner .header-left,
+  .header-inner .header-right {
+    flex: 1;
+    height: 100%; }
+  .header-inner .header-left .header-logo-holder {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .header-inner .header-left .header-logo-holder .kampster {
+      height: 40px;
+      margin-right: 15px; }
+    .header-inner .header-left .header-logo-holder .logo-separator {
+      display: inline-block;
+      height: 30px;
+      width: 1px;
+      background-color: #CBD9E5; }
+  .header-inner .header-center {
+    position: relative;
+    width: 30%;
+    height: 100%; }
+    @media screen and (max-width: 600px) {
+      .header-inner .header-center {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%; } }
+    .header-inner .header-center .header-nav {
+      height: 100%; }
+      .header-inner .header-center .header-nav .header-ul {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        list-style-type: none; }
+        .header-inner .header-center .header-nav .header-ul .menu-item {
+          display: table;
+          height: 100%;
+          text-align: center;
+          flex: 1;
+          white-space: nowrap; }
+          .header-inner .header-center .header-nav .header-ul .menu-item a {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            padding: 0 15px;
+            color: rgba(0, 0, 0, 0.5);
+            letter-spacing: .8px;
+            font-weight: 600;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s; }
+            .header-inner .header-center .header-nav .header-ul .menu-item a:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 3px;
+              width: 100%;
+              background-color: #fff;
+              z-index: 10;
+              -webkit-transition: .3s;
+              transition: .3s; }
+            .header-inner .header-center .header-nav .header-ul .menu-item a:after {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 3px;
+              width: 100%;
+              background-color: #01f8cb;
+              background-color: #00ace8;
+              background-image: -webkit-linear-gradient(left, #00ace8, #01f8cb, #00ace8);
+              background-image: linear-gradient(to right, #00ace8, #01f8cb, #00ace8); }
+            .header-inner .header-center .header-nav .header-ul .menu-item a:hover, .header-inner .header-center .header-nav .header-ul .menu-item a.active {
+              color: rgba(0, 0, 0, 0.87); }
+              .header-inner .header-center .header-nav .header-ul .menu-item a:hover:before, .header-inner .header-center .header-nav .header-ul .menu-item a.active:before {
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0); }
+  .header-inner .header-right {
+    display: flex;
+    justify-content: flex-end; }
+    .header-inner .header-right .header-right-children {
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      height: 100%;
+      transition: background-color 0.2s; }
+      .header-inner .header-right .header-right-children:hover {
+        background-color: rgba(237, 242, 246, 0.5); }
+    .header-inner .header-right .avatar-wrapper {
+      transition: background-color 0.2s; }
+      .header-inner .header-right .avatar-wrapper:hover {
+        background-color: rgba(237, 242, 246, 0.5); }
+      .header-inner .header-right .avatar-wrapper .avatar-inner-wrapper {
+        display: flex; }
+    .header-inner .header-right .avatar-holder {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: relative;
+      background: #04ade8;
+      text-align: center;
+      line-height: 40px;
+      font-size: 24px;
+      color: white;
+      padding: 0;
+      font-weight: normal;
+      margin: auto; }

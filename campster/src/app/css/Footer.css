@@ -1,0 +1,18 @@
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.footer-ul {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+  .footer-ul > li {
+    display: inline-block; }
+    .footer-ul > li > a {
+      padding: 10px 4px;
+      color: #222;
+      text-decoration: underline; }
